@@ -56,5 +56,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A875EDF1-40DC-4A72-8E70-72540D94D032"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateConverter/UI/Converter/Core/View/ConverterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "updateRateValue(rate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A18EC3A-C79C-48E5-A321-765A62DE5C4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateConverter/UI/Converter/Core/View/ConverterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "displayConvertedCurrency(exchange:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A18EC3A-C79C-48E5-A321-765A62DE5C4B - aa8614f95679bd53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateConverter.ConverterViewController.displayConvertedCurrency(exchange: Swift.String) -&gt; ()"
+                  moduleName = "RateConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/speedy/Dropbox/_codechallanges/RateConverter/RateConverter/UI/Converter/Core/View/ConverterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  uuid = "7A18EC3A-C79C-48E5-A321-765A62DE5C4B - e872c90b6858b0ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in RateConverter.ConverterViewController.displayConvertedCurrency(exchange: Swift.String) -&gt; ()"
+                  moduleName = "RateConverter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/speedy/Dropbox/_codechallanges/RateConverter/RateConverter/UI/Converter/Core/View/ConverterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B0A9195-6CF2-4A1B-9149-85BBC268B55A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateConverter/UI/Converter/Core/View/ConverterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -3,6 +3,7 @@ import Foundation
 
 // MARK: - Main Class
 class ConverterDefaultPresenter: ConverterPresenter {
+
     private let interactorManager: ConverterInteractorManager
     private let router: ConverterRouter
     private weak var view: ConverterView?
@@ -23,6 +24,7 @@ class ConverterDefaultPresenter: ConverterPresenter {
                 if let newCurrencies = result {
                     print("Currencies fetched from server")
                     self.view?.displayConvertedCurrency(exchange: self.currencyConverter.convertRate(fromValue: amount, toValue: newCurrencies[0].value))
+                    self.view?.updateRateValue(rate: newCurrencies[0].value)
                 }
             }
         })

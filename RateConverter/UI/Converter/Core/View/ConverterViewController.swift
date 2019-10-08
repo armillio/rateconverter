@@ -7,7 +7,7 @@ class ConverterViewController: UIViewController {
     @IBOutlet weak var converterLabel: UILabel!
     @IBOutlet weak var converterTextField: UITextField!
     
-    private var textMaxLength = 300
+    private var textMaxLength = 10
     
     var presenter: ConverterPresenter?
     
@@ -15,6 +15,7 @@ class ConverterViewController: UIViewController {
     
     var baseCurrency:String?
     var currencyToConvert:String?
+    var baseRateValue: Double?
     
     convenience init(withBaseCurrency baseCurrency: String, withCurrency currencyToConvert: String) {
         self.init(nibName: nil, bundle: nil)
@@ -49,6 +50,10 @@ class ConverterViewController: UIViewController {
 
 // MARK: - CurrencyConverterView
 extension ConverterViewController: ConverterView {
+    func updateRateValue(rate: Double){
+        self.baseRateValue = rate
+    }
+    
     func displayConvertedCurrency(exchange: String){
         DispatchQueue.main.async {
             self.converterTextField.text = exchange
@@ -60,9 +65,8 @@ extension ConverterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         resignFirstResponder()
         guard let baseTextField = self.baseTextField.text else{ return false }
-        guard let baseLabel = self.baseLabel.text else{ return false }
-        guard let converterLabel = self.converterLabel.text else{ return false }
-        presenter?.convertCurrency(withAmount: baseTextField, from: baseLabel, to: converterLabel)
+        guard let rateValue = self.baseRateValue else{ return false }
+        self.converterTextField.text = self.currencyConverter.convertRate(fromValue: baseTextField, toValue: rateValue)
         
         return false
     }
@@ -70,6 +74,11 @@ extension ConverterViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
         let newLength = text.count + string.count - range.length
+        
+        guard let baseTextField = self.baseTextField.text else{ return false }
+        guard let rateValue = self.baseRateValue else{ return false }
+        self.converterTextField.text = self.currencyConverter.convertRate(fromValue: baseTextField, toValue: rateValue)
+        
         return newLength <= textMaxLength
     }
 }

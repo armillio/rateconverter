@@ -15,6 +15,7 @@ protocol ConverterPresenter {
 
 protocol ConverterView: class {
     func displayConvertedCurrency(exchange: String)
+    func updateRateValue(rate: Double)
 }
 
 protocol ConverterRouter {

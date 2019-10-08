@@ -17,7 +17,6 @@
 		47DA016E2346E80000697737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DA01632346E80000697737 /* LaunchScreen.storyboard */; };
 		47DA016F2346E80000697737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DA01652346E80000697737 /* Main.storyboard */; };
 		47DA01702346E80000697737 /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DA01672346E80000697737 /* FlagKit.xcassets */; };
-		47DA01A02346E80F00697737 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA017B2346E80F00697737 /* KeyboardManager.swift */; };
 		47DA01A22346E80F00697737 /* ConverterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA01802346E80F00697737 /* ConverterContract.swift */; };
 		47DA01A32346E80F00697737 /* ConverterDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA01812346E80F00697737 /* ConverterDefaultBuilder.swift */; };
 		47DA01A42346E80F00697737 /* ConverterDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA01822346E80F00697737 /* ConverterDefaultRouter.swift */; };
@@ -56,7 +55,6 @@
 		47DA01642346E80000697737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47DA01662346E80000697737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47DA01672346E80000697737 /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlagKit.xcassets; sourceTree = "<group>"; };
-		47DA017B2346E80F00697737 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		47DA01802346E80F00697737 /* ConverterContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterContract.swift; sourceTree = "<group>"; };
 		47DA01812346E80F00697737 /* ConverterDefaultBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterDefaultBuilder.swift; sourceTree = "<group>"; };
 		47DA01822346E80F00697737 /* ConverterDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterDefaultRouter.swift; sourceTree = "<group>"; };
@@ -136,13 +134,12 @@
 			isa = PBXGroup;
 			children = (
 				47DA01502346E7D700697737 /* RateConverter-Bridging-Header.h */,
-				476747C9234B7623002C8A70 /* Repository */,
 				47DA01512346E7D800697737 /* AppDelegate.swift */,
 				47DA01522346E7D800697737 /* ApplicationConstants.swift */,
 				47DA01B62346E81A00697737 /* Environments.swift */,
 				47DA014A2346E77200697737 /* Info.plist */,
 				47DA01B82346E82500697737 /* Containers */,
-				47DA017A2346E80F00697737 /* Managers */,
+				476747C9234B7623002C8A70 /* Repository */,
 				47DA017C2346E80F00697737 /* UI */,
 				47DA01552346E80000697737 /* Supporting Files */,
 			);
@@ -160,14 +157,6 @@
 				47DA01672346E80000697737 /* FlagKit.xcassets */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		47DA017A2346E80F00697737 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				47DA017B2346E80F00697737 /* KeyboardManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		47DA017C2346E80F00697737 /* UI */ = {
@@ -369,7 +358,6 @@
 				47DA01A32346E80F00697737 /* ConverterDefaultBuilder.swift in Sources */,
 				47DA01A52346E80F00697737 /* ConverterDefaultInteractorManager.swift in Sources */,
 				47DA01AC2346E80F00697737 /* CurrencyTableViewCell.swift in Sources */,
-				47DA01A02346E80F00697737 /* KeyboardManager.swift in Sources */,
 				47DA01542346E7D800697737 /* ApplicationConstants.swift in Sources */,
 				47B992672346EA7C00DAF41A /* IsoCountries.swift in Sources */,
 				47DA01B22346E80F00697737 /* CurrencyListDefaultRouter.swift in Sources */,
